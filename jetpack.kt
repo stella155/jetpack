@@ -15,4 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         // operations to be performed
         // when user tap on the button
-
+        button?.setOnClickListener()
+        {
+            // displaying a toast message
+            Toast.makeText(this@MainActivity, R.string.message, Toast.LENGTH_LONG).show() }
+    }
+}
