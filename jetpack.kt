@@ -9,15 +9,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // storing ID of the button
-        // in a variable
+        // storing ID of the button in a variable
         val button = findViewById<Button>(R.id.button)
 
-        // operations to be performed
-        // when user tap on the button
-        button?.setOnClickListener()
-        {
+        // operations to be performed when user taps on the button
+        button?.setOnClickListener {
             // displaying a toast message
-            Toast.makeText(this@MainActivity, R.string.message, Toast.LENGTH_LONG).show() }
+            Toast.makeText(this@MainActivity, R.string.message, Toast.LENGTH_LONG).show()
+        }
     }
 }
+
